@@ -5,11 +5,10 @@
   {mod, {godot_domoticz_link_app, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    cowboy,
+    gun
    ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["Apache 2.0"]},
-  {links, []}
+  {env, [{port, 8001}]},
+  {modules, []}
  ]}.
